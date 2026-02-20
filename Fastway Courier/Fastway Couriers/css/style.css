@@ -1,0 +1,669 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    font-family: 'Aptos', sans-serif;
+}
+/* Header Navigation Bar */
+header {
+    background: #fff;
+    box-shadow: 0 2px 8px #eee;
+    padding: 0 0 10px 0;
+}
+header .Logo {
+    height: 60px;
+    margin: 10px 0;
+    position: static;
+}
+header nav ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 40px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+header nav ul li a {
+    color: #009688;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background 0.2s, color 0.2s;
+}
+header nav ul li a:hover {
+    background: #009688;
+    color: #fff;
+}
+header .social-icons {
+    display: flex;
+    gap: 10px;
+    margin-left: 20px;
+}
+header .social-icons a {
+    color: #009688;
+    font-size: 1.5em;
+    transition: color 0.2s;
+}
+header .social-icons a:hover {
+    color: #333;
+}
+
+/* Hero Section */
+#hero {
+    background: linear-gradient(rgba(0,0,0,0.5),#009688), url("images/Back.jpg");
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 80px 20px 60px 20px;
+}
+#hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+#hero h2 {
+    font-size: 1.5em;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+#hero p {
+    max-width: 600px;
+    margin: auto;
+    font-size: 1.1em;
+}
+#hero a {
+    display: inline-block;
+    margin-top: 30px;
+    background: #fff;
+    color: #009688;
+    padding: 15px 40px;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: background 0.2s, color 0.2s;
+}
+#hero a:hover {
+    background: #009688;
+    color: #fff;
+}
+
+/* Service Highlights */
+#services-highlights {
+    background: #f7f7f7;
+    padding: 50px 0;
+}
+#services-highlights > div {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+#services-highlights .service-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #eee;
+    padding: 30px;
+    flex: 1 1 220px;
+    min-width: 220px;
+    text-align: center;
+}
+#services-highlights .service-card i {
+    font-size: 2em;
+    color: #009688;
+    margin-bottom: 10px;
+}
+
+/* Franchise & Why Fastway Sections */
+#franchise, #why-fastway {
+    background: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+#franchise h2, #why-fastway h2 {
+    font-size: 2em;
+    color: #009688;
+    margin-bottom: 20px;
+}
+#franchise p, #why-fastway p {
+    max-width: 700px;
+    margin: auto;
+    font-size: 1.1em;
+}
+#why-fastway > div {
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+#why-fastway .why-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #eee;
+    padding: 30px;
+    flex: 1 1 220px;
+    min-width: 220px;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: #fff;
+    padding: 40px 0 20px 0;
+    text-align: center;
+}
+footer > div {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+footer h3 {
+    margin-bottom: 10px;
+}
+footer address, footer p {
+    color: #fff;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+footer a {
+    color: #fff;
+    text-decoration: underline;
+}
+footer a:hover {
+    color: #009688;
+}
+footer .social-icons {
+    margin-top: 30px;
+}
+footer .social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 1.5em;
+    transition: color 0.2s;
+}
+footer .social-icons a:hover {
+    color: #009688;
+}
+footer p.copyright {
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+/* Add Aptos font-face for local font usage */
+@font-face {
+    font-family: 'Aptos';
+    src: url('microsoft fonts/Aptos.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@media screen and (max-width: 900px) {
+    #services-highlights > div, #why-fastway > div, footer > div {
+        flex-direction: column;
+        gap: 20px;
+    }
+    header nav ul {
+        gap: 20px;
+        font-size: 1em;
+    }
+}
+#banner{
+   background: linear-gradient(rgba(0,0,0,0.5),#009688),url("images/Back.jpg");
+   background-size: cover;
+   background-position: center;
+   height: 100vh;
+
+}
+.Logo{
+     width: 140px;
+     position: absolute;
+     top: 4%;
+     left: 10;
+}
+.banner-text{
+    text-align: center;
+    color:#fff;
+    padding-top: 180px;
+}
+.banner-text h1{
+    font-size: 130px;
+    font-family: 'Kaushan Script', 'cursive';
+}
+.banner-text p{
+    font-size: 20px;
+    font-style: italic;
+}
+.banner-btn{
+    margin: 70px auto 0;
+}
+.banner-btn a{
+    width: 150px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 12px 0;
+    color:#fff;
+    border: .5px solid #fff;
+    position: relative;
+    z-index: 1;
+    transition: color 0.5s;
+}
+.banner-btn a span{
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background:#fff;
+    z-index: -1;
+    transition: 0.5s;
+}
+.banner-btn a:hover span{
+    width: 100%;
+}
+.banner-btn a:hover{
+    color:black
+}
+nav ul li{
+    list-style: none;
+    margin: 50px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+ 
+}
+#menuBtn{
+    width: 50px;
+    height: 50px;
+    background: #009688;
+    text-align: center;
+    position: fixed;
+    right: 30px;
+    top: 20px;
+    border-radius: 3px;
+    z-index: 3;
+    cursor: pointer;
+}
+#menuBtn img{
+   width: 20px;
+   margin-top: 15px;
+}
+@media screen and (max-width: 770px) {
+  .banner-text h1{
+    font-size: 44px;
+}
+    .banner-btn a{
+        display: block;
+        margin: 20px auto;
+    }
+}
+/*--feauture--*/
+#feature{
+    width: 100%;
+    padding: 70px 0;
+}
+.title-text{
+    text-align: center;
+    padding-bottom: 70px;
+}
+.title-text p{
+    margin: auto;
+    font-size: 20px;
+    color: #009688;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+.title-text p::after{
+    content: "";
+    width: 50px;
+    height: 35px;
+    background: linear-gradient(#019587,#fff);
+    position: absolute;
+    top: -20px;
+    left: 0;
+    z-index: -1;
+    transform: rotate(10deg);
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+}
+.title-text h1{
+    font-size: 50px;
+}
+.feature-box{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+.features{
+    flex-basis: 50%;
+}
+.feature-img{
+    flex-basis: 50%;
+    margin: auto;
+}
+.features-img img{
+    width: 70%;
+    border-radius: 10px;
+}
+.features h1{
+    text-align:left;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: #009688;
+}
+.features-desc{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.feature-icon .fa{
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    line-height: 50px;
+    border-radius: 8px;
+    color: #009688;
+    border: 1px solid #009688;
+}
+.feature-text p{
+    padding:0 20px;
+    text-align: initial;
+}
+@media screen and (max-width: 770px) {
+    .title-text h1{
+        font-size: 35px;
+    }
+    .features{
+        flex-basis: 100%;
+    }
+    .feature-img{
+        flex-basis: 100%;
+    }
+    .features-img img{
+        width: 100%;
+    }
+}
+
+/*--service--*/
+#service{
+    width: 100%;
+    padding: 70px 0;
+    background:#efefef62;
+}
+.service-box{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.single-service{
+    flex-basis: 48%;
+    text-align: center;
+    border-radius: 7px;
+    margin-top: 20px;
+    color:#fff;
+    position: relative;
+}
+.single-service img{
+    width: 100%;
+    border-radius: 7px;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    border-radius: 7px;
+    cursor: pointer;
+    background: linear-gradient(rgba(0,0,0,0.5),#009688);
+    opacity: 0;
+    transition: 1s;
+}
+.single-service:hover .overlay{
+    opacity: 1;
+}
+.service-desc{
+    width:80%;
+    position:absolute;
+    bottom:40%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 1s;
+}
+hr{
+    background: #fff;
+    height: 1px;
+    border: 0;
+    margin: 15px auto;
+    width: 60%;
+}
+.service-desc p{
+    font-size: 14px;
+}
+.single-service:hover .service-desc{
+    bottom: 40%;
+}
+.single-service:hover .service-desc{
+    bottom: 40%;
+    opacity: 1;
+}
+@media screen and (max-width: 770px) {
+    .single-service{
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+    .service-desc p{
+        font-size: 12px;
+    }
+    hr{
+        margin: 5px auto;
+    }
+    .single-service:hover .service-desc{
+        bottom: 25% !important;
+      
+    }
+} /* Closing for the @media screen and (max-width: 770px) related to service */
+
+#testimonial{
+    width: 100%;
+    padding: 70px 0;
+}
+.testimonial-row{
+    width:80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.testimonial-col{
+    flex-basis: 28%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px 3px #00968814;
+    cursor: pointer;
+}
+.testimonial-col p{
+    font-size: 14px;
+}
+.user{
+    display: flex;
+    align-items: center;
+    margin-top: 20px; /* Changed from 20px 0 to 20px */
+}
+.user img{
+    width: 50px;
+    border-radius: 3px;
+    margin-right: 20px;
+}
+.testimonial-col:hover{
+    transform: translateY(-7px);
+}
+@media screen and (max-width: 770px) {
+    .testimonial-col{
+        flex-basis: 100%;
+    }
+}
+
+#footer{
+    padding: 100px 0 20px;
+    background:#efefef; /* Added semicolon */
+}
+.footer-row{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.footer-left,.footer-right{
+    flex-basis: 45%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.footer-right{
+    text-align: right;
+}
+.footer-row h1{
+    margin: 10px 0;
+}
+.footer-row p{
+    line-height: 35px;
+}
+.footer-left .fa,.footer-right .fa{
+    font-size: 20px;
+    color: #009688;
+    margin: 10px 0;
+}
+
+/* Match spacing for enquiry section */
+.enquiry-section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.enquiry-section .title-text {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.enquiry-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.enquiry-form input[type="text"],
+.enquiry-form input[type="email"],
+.enquiry-form textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.enquiry-form input[type="submit"] {
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+/* Responsive */
+@media screen and (max-width: 900px) {
+    /* These rules were repeated, keeping them for now but ideally consolidate */
+    #services-highlights > div, #why-fastway > div, footer > div {
+        flex-direction: column;
+        gap: 20px;
+    }
+    header nav ul {
+        gap: 20px;
+        font-size: 1em;
+    }
+}
+/* Form validation styles */
+.error-message {
+    color: #d32f2f;
+    font-size: 0.85em;
+    margin-top: 5px;
+    display: block;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px #4CAF50;
+}
+
+input.error,
+textarea.error,
+select.error {
+    border-color: #d32f2f;
+    background-color: #ffebee;
+}
+
+.char-counter {
+    font-size: 0.85em;
+    color: #666;
+    margin-top: 5px;
+    text-align: right;
+}
+
+.success-message {
+    background: #4CAF50;
+    color: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1.1em;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    animation: slideDown 0.5s ease;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}
