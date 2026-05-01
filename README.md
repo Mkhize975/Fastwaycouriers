@@ -6,5 +6,3 @@ This is a school assignment.
 - Feature 1
 - Feature 2
 
-## Installation
-Instructions go here.
